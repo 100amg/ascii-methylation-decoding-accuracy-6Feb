@@ -80,44 +80,6 @@ methylation-ascii-decoding-pipeline/
 ```
 
 ---
-
-# Supported Input BAMs
-
-The workflow supports methylation-tagged BAM files generated using:
-
-| Pipeline                       | Supported |
-| ------------------------------ | --------- |
-| Dorado HAC methylation calling | Yes       |
-| Dorado SUP methylation calling | Yes       |
-| DeepMod2 methylation calling   | Yes       |
-| Guppy HAC methylation calling  | Yes       |
-
-The BAMs must contain:
-
-* mapped reads
-* methylation tags
-* CpG methylation information
-
-The workflow specifically processes:
-
-```text id="jlwm7x"
-*_mod_sorted.bam
-```
-
-files.
-
----
-
-# Software Requirements
-
-| Software                    | Purpose                           |
-| --------------------------- | --------------------------------- |
-| Modkit (v0.5.0 recommended) | Methylation pileup generation     |
-| Samtools                    | BAM statistics                    |
-| Python 3                    | Statistical analysis and decoding |
-
----
-
 # Python Scripts Used
 
 | Script                   | Purpose                            |
